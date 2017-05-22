@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.malwinakapala.DpFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text_relative_layout"
+        android:background="#CCAF9F">
+        <EditText
+            android:id="@+id/myEditText"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:inputType="number"
+            android:imeOptions="actionSend"
+            android:hint="Type in dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_view_relative_layout"
+        android:layout_below="@+id/edit_text_relative_layout"
+        android:background="#46899F"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/myTextView1"
+            tools:text="example"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/myTextView2"
+            android:layout_below="@+id/myTextView1"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/myTextView3"
+            android:layout_below="@+id/myTextView2"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/myTextView4"
+            android:layout_below="@+id/myTextView3"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/myTextView5"
+            android:layout_below="@+id/myTextView4"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/myTextView6"
+            android:layout_below="@+id/myTextView5"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

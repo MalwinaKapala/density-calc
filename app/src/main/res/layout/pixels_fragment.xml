@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.malwinakapala.PxActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text_spinner_relative_layout"
+        android:background="#CCAF9F">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/pxEditText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:inputType="number"
+            android:hint="Type in px"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttons_relative_layout"
+        android:layout_below="@+id/edit_text_spinner_relative_layout"
+        android:layout_marginTop="10dp">
+
+        <RadioGroup android:id="@+id/toggleGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+            >
+            <ToggleButton android:id="@+id/btn_ldpi"
+                          android:layout_height="wrap_content"
+                          android:layout_width="match_parent"
+                          android:layout_weight="1"
+                          android:textSize="11sp"
+                          android:textOn="ldpi"
+                          android:textOff="ldpi"
+                          android:checked="true"
+                          android:background="@drawable/check"
+                          android:layout_marginRight="5dp"
+                />
+            <ToggleButton android:id="@+id/btn_mdpi"
+                          android:layout_height="wrap_content"
+                          android:layout_width="match_parent"
+                          android:layout_weight="1"
+                          android:textSize="11sp"
+                          android:textOn="mdpi"
+                          android:textOff="mdpi"
+                          android:background="@drawable/check"
+                          android:layout_marginRight="5dp"
+                />
+            <ToggleButton android:id="@+id/btn_hdpi"
+                          android:layout_height="wrap_content"
+                          android:layout_width="match_parent"
+                          android:layout_weight="1"
+                          android:textSize="11sp"
+                          android:textOn="hdpi"
+                          android:textOff="hdpi"
+                          android:background="@drawable/check"
+                          android:layout_marginRight="5dp"
+                />
+            <ToggleButton android:id="@+id/btn_xhdpi"
+                          android:layout_height="wrap_content"
+                          android:layout_width="match_parent"
+                          android:layout_weight="1"
+                          android:textSize="11sp"
+                          android:textOn="xhdpi"
+                          android:textOff="xhdpi"
+                          android:background="@drawable/check"
+                          android:layout_marginRight="5dp"
+                />
+            <ToggleButton android:id="@+id/btn_xxhdpi"
+                          android:layout_height="wrap_content"
+                          android:layout_width="match_parent"
+                          android:layout_weight="1"
+                          android:textSize="11sp"
+                          android:textOn="xxhdpi"
+                          android:textOff="xxhdpi"
+                          android:background="@drawable/check"
+                          android:layout_marginRight="5dp"
+                />
+            <ToggleButton android:id="@+id/btn_xxxhdpi"
+                          android:layout_height="wrap_content"
+                          android:layout_width="match_parent"
+                          android:layout_weight="1"
+                          android:textSize="11sp"
+                          android:textOn="xxxhdpi"
+                          android:textOff="xxxhdpi"
+                          android:background="@drawable/check"
+                />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view_relative_layout"
+        android:layout_below="@+id/buttons_relative_layout"
+        android:layout_marginTop="10dp"
+        android:background="#46899F">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dp_text_view"
+            android:text="dp"
+            android:textSize="24dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:imeOptions="actionSend"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/dp_description_text_view"
+            android:text="density independent pixels"
+            android:textSize="12dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/dp_text_view"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pixels_text_view"
+            tools:text="example"
+            android:layout_below="@+id/dp_description_text_view"
+            android:textSize="32dp"
+            android:textColor="#FFFFFF"
+            android:background="#15617A"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:paddingRight="10dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
